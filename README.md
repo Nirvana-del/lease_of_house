@@ -1,18 +1,11 @@
-# Vue 3 + TypeScript + Vite
-
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
-
-## Recommended IDE Setup
-
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
-
-## Type Support For `.vue` Imports in TS
-
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
-
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
-
-1. Disable the built-in TypeScript Extension
-   1. Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-   2. Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+本系统主要分为后台管理员功能和前台用户功能
+1.后台管理员的功能：
+（1）身份验证，即登录模块，管理员输入用户名、密码验证成功后可以进入后台管理系统；
+（2）员工信息管理：管理员进入后台界面后，可以查看所有已注册的用户信息，有且仅有super 管理员可以进行编辑、删除其他用户权限的操作，其他管理员可以审核删除用户发布的房源信息等功能；
+（3）房屋信息管理：管理员可以审核所有前台注册用户发布的房屋信息，并可以对不合格的房屋信息进行删除的操作；
+（4）论坛信息管理：管理员不需要审核前台注册用户发布的论坛信息，但可以对不合格的信息进行删除的操作 [注：论坛 即类似微博]2.前台用户的功能:
+（1）身份验证：用户登录网站首页后，可以进行注册，注册成功后登陆网站，才可以进行发布信息等操作；
+（2）个人信息管理：用户登录成功后，可以对自己的个人信息进行完善，也可以对个人的登录密码进行修改；
+（3）房屋信息管理：用户登录成功后，可以发布房屋的出租信息和在论坛发布求租信息，并且对一些不真实的房屋信息可以进行举报；
+（4）浏览功能：用户可以在网页上查看房屋信息，对房屋信息进行条件搜索
+（5）交易功能：消费者通过平台进行交费，租金和水电费等等
